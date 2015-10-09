@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="activity.kids.com.kidzo.NamesHomeActivity">
+
+    <include
+        android:id="@+id/btn_gp_navigate"
+        layout="@layout/lyt_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="68dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_names"
+        android:layout_below="@id/btn_gp_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/lyt_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

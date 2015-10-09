@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="activity.kids.com.kidzo.fragments.AlphabetFragment">
+
+    <TextView
+        android:id="@+id/txv_character_caps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="A"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/app_bar_color_primary"
+        android:textSize="100sp" />
+
+
+    <ImageView
+        android:id="@+id/img_alphabet"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size"
+        android:layout_centerInParent="true"
+       />
+
+    <TextView
+        android:id="@+id/txv_character_nocaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="a"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/app_bar_color_primary"
+        android:textSize="100sp" />
+
+</RelativeLayout>

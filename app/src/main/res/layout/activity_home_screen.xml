@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@android:color/white"
+    tools:context=".HomeScreenActivity">
+
+
+    <RelativeLayout
+        android:layout_weight="90"
+        android:id="@+id/lyt_btns"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txv_app_name"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="@string/txv_app_title"
+            android:textSize="45sp"
+            android:textColor="#E56CA8"
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_a_to_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="@dimen/menu_btn_padding"
+            android:background="@drawable/atoz_background"
+            android:text="A-Z"
+            android:textAllCaps="false"
+            android:layout_below="@id/txv_app_name"
+            android:textColor="@android:color/black" />
+
+
+        <Button
+            android:id="@+id/btn_counting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_below="@id/txv_app_name"
+            android:layout_toRightOf="@id/btn_a_to_z"
+            android:background="@drawable/counting_btn_background"
+            android:text="1-10"
+            android:padding="@dimen/menu_btn_padding"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_poems"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_a_to_z"
+            android:layout_margin="10dp"
+            android:background="@drawable/poem_btn_background"
+            android:text="POEMS"
+            android:padding="@dimen/menu_btn_padding"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_names"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_counting"
+            android:layout_margin="10dp"
+            android:padding="@dimen/menu_btn_padding"
+            android:layout_toRightOf="@id/btn_poems"
+            android:background="@drawable/names_btn_bacground"
+            android:text="NAMES"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/lyt_ad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+</LinearLayout>

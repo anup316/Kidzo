@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context="activity.kids.com.kidzo.NamesMenuActivity">
+
+    <ImageButton
+        android:id="@+id/btn_animals"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_margin="10dp"
+        android:background="@drawable/atoz_background"
+        android:src="@drawable/animalicon"
+
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/btn_birds"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/btn_animals"
+        android:background="@drawable/counting_btn_background"
+        android:src="@drawable/birdicon"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_months"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_below="@id/btn_animals"
+        android:layout_margin="10dp"
+        android:background="@drawable/poem_btn_background"
+        android:src="@drawable/monthicon"
+         />
+
+    <ImageButton
+        android:id="@+id/btn_days"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_below="@id/btn_birds"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/btn_months"
+        android:background="@drawable/atoz_background"
+        android:src="@drawable/dayicon"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_vehicles"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_below="@id/btn_months"
+        android:layout_margin="10dp"
+        android:background="@drawable/counting_btn_background"
+        android:src="@drawable/vehicleicon"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btn_colors"
+        android:layout_width="@dimen/menu_size"
+        android:layout_height="@dimen/menu_size"
+        android:layout_below="@id/btn_days"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/btn_vehicles"
+        android:background="@drawable/poem_btn_background"
+        android:src="@drawable/coloricon"
+
+        />
+
+
+</RelativeLayout>

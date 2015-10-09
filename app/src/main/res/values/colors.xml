@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bar_color_primary">#ff5722</color>
+    <color name="btn_color">#e64a19</color>
+    <color name="yellow">#ffff00</color>
+    <color name="pink">#ffc0cb</color>
+</resources>
